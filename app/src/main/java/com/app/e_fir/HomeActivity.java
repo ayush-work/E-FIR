@@ -3,13 +3,11 @@ package com.app.e_fir;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
-public class Home extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +18,16 @@ public class Home extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), MainActivity.class);
+                Intent myIntent = new Intent(v.getContext(), LoginActivity.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        Button home1 =(Button)findViewById(R.id.button2);
+        home1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), FormActivity.class);
                 startActivityForResult(myIntent, 0);
             }
         });

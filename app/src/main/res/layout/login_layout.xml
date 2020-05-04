@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/gradient_6"
-    tools:context="com.app.e_fir.MainActivity">
+    tools:context="com.app.e_fir.LoginActivity">
 
 
     <ImageView
