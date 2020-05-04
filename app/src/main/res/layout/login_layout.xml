@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradient_6"
     tools:context="com.app.e_fir.LoginActivity">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/police" />
+        android:background="@drawable/pol" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -46,7 +45,7 @@
             android:layout_height="wrap_content"
             android:text="Get Verification Code"
             android:textAllCaps="false"
-            android:background="@drawable/button"/>
+            android:background="@drawable/toggle"/>
 
         <EditText
             android:id="@+id/editTextCode"
@@ -65,19 +64,10 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:text="Sign In"
-            android:background="@drawable/button"/>
+            android:background="@drawable/toggle"/>
 
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="50dp"
-            android:layout_marginTop="200dp"
-            android:text="E-FIR"
-            android:textColor="@color/cardview_dark_background"/>
-    </LinearLayout>
+         </LinearLayout>
 
 
 

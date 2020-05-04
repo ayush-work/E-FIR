@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_6"
     tools:context=".FormActivity">
 
     <ScrollView
@@ -25,9 +24,11 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="45dp"
                 android:text="Police Incident Report "
                 android:textSize="24sp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
                 android:textStyle="bold" />
 
             <TextView
@@ -540,8 +541,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:textSize="10dp"
                 android:layout_marginBottom="100dp"
-                android:background="@drawable/button"
+                android:background="@drawable/toggle"
                 android:text="Report Now" />
 
         </LinearLayout>

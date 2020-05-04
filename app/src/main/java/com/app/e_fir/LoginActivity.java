@@ -15,10 +15,10 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.login_layout);
         Button next = (Button) findViewById(R.id.buttonSignIn);
         next.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                setResult(RESULT_OK, intent);
-                finish();
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), FormActivity.class);
+                startActivityForResult(myIntent, 0);
             }
         });
     }}

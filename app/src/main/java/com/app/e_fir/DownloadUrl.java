@@ -6,15 +6,17 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class DownloadUrl {
-    public String readUrl(String myurl) throws IOException{
+    public void readUrl(String myurl) throws IOException{
 
         String data="";
         InputStream inputStream=null;
         HttpURLConnection httpURLConnection=null;
-        try{
-            URL url= new URL(myurl);
+        try {
+            URL url = new URL(myurl);
             httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.connect();
+        } finally {
+
         }
     }
 }

@@ -7,14 +7,13 @@
     android:layout_height="match_parent"
     android:paddingTop="40dp"
     android:paddingLeft="30dp"
-    android:background="@drawable/gradient_6"
-    android:orientation="horizontal">
+        android:orientation="horizontal">
 
     <Button
         android:id="@+id/button"
         android:layout_width="125dp"
         android:layout_height="133dp"
-        android:background="@drawable/button"
+        android:background="@drawable/toggle"
         android:layout_marginLeft="20dp"
         android:text="Login"
         android:paddingTop="10dp"
@@ -28,7 +27,7 @@
         android:layout_height="133dp"
         android:paddingTop="15dp"
         android:layout_marginLeft="80dp"
-        android:background="@drawable/button"
+        android:background="@drawable/toggle"
         android:text="Nearby Police Station"
         android:layout_toRightOf="@id/button"
         android:drawableTop="@drawable/map" />
