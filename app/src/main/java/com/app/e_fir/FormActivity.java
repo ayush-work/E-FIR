@@ -20,7 +20,7 @@ public class FormActivity extends AppCompatActivity {
     EditText inciLoc,inciNature,inciDetails;
     EditText vitFname,vitLname,vitCity,vitState,vitPin,vitCountry,vitAdd,vitPhNumber;
     DatabaseReference reff;
-    Victim victim;
+    //Victim victim;
 
 
     @Override
@@ -60,20 +60,35 @@ public class FormActivity extends AppCompatActivity {
         vitPin=(EditText)findViewById(R.id.vitPin);
 
         Button button = (Button) findViewById(R.id.button3);
-        victim = new Victim();
+       // victim = new Victim();
         reff = FirebaseDatabase.getInstance().getReference().child("Case: ");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                victim.setFname(vicFname);
-                victim.setMname(vicMname);
-                victim.setLname(vicLname);
-                victim.getInciDet(inciDetails);
-                victim.getDate(dor);
-
-                reff.push().child("Victim").setValue(victim);
+//                victim.setFname(vicFname);
+//                victim.setMname(vicMname);
+//                victim.setLname(vicLname);
+//                victim.getInciDet(inciDetails);
+//                victim.getDate(dor);
+                  victim();
+                //reff.push().child("Victim").setValue(victim);
+                Toast.makeText(getApplicationContext(),"Data succesfully entered",Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    private void victim() {
+        String vicfname = vicFname.getText().toString().trim();
+        String vicmname = vicMname.getText().toString().trim();
+        String viclname = vicLname.getText().toString().trim();
+
+        Victim victim = new Victim();
+
+        reff.child("Victim").setValue(victim);
+
+        Toast.makeText(this,"data addded succefully",Toast.LENGTH_LONG).show();
 
     }
+
+
 }
