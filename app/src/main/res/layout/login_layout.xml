@@ -27,16 +27,17 @@
         android:orientation="vertical"
         android:padding="15dp">
 
+
         <EditText
             android:id="@+id/editTextPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:digits="0123456789"
+            android:digits="+0123456789"
             android:ems="10"
             android:layout_marginTop="30dp"
             android:ellipsize="start"
             android:gravity="center"
-            android:hint="Enter phone number"
+            android:hint="Enter phone number with country code"
             android:inputType="phone" />
 
         <Button
